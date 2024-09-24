@@ -41,12 +41,11 @@ return [
 //            'journal_mode' => null,
 //            'synchronous' => null,
 //        ],
-        'sqlite' => array(
+        'sqlite' => [
             'driver' => 'sqlite',
-            'url' => env(
-                'DATABASE_URL',
-            ),
-            'database' => 'ctv-marketing-agency',
+            'url' = env('DB_URL'),
+            'database' => env('DB_DATABASE', database_path('ctv-marketing.sqlite'
+            )),
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
             'busy_timeout' => null,
@@ -54,7 +53,7 @@ return [
             'synchronous' => null,
 
 
-        ),
+        ],
 
         'mysql' => [
             'driver' => 'mysql',
