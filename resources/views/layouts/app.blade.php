@@ -4,25 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ config('app.name') }} - @yield('title', 'One Page Application')</title>
-
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
 <nav>
     <ul>
+        <li><a href="#hero">Hero</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#blog">Blog</a></li>
     </ul>
 </nav>
+
+{{--SECTIONS--}}
+<section id="hero">
+    <div class="container">
+        <h1>Hero</h1>
+        <p>This is my hero statement. Why should you care?</p>
+        <a href="#" class="button">Learn More</a>
+    </div>
+</section>
 
 <section id="about">
     <div class="container">
         <h1>About Us</h1>
         <p>Welcome to our one-page application!</p>
-        <a href="#" class="button">Learn More</a>
+        <a href="about" class="button">Learn More</a>
     </div>
 </section>
 
@@ -52,6 +62,14 @@
         <h2>Contact Us</h2>
         <p>Get in touch with us for more information.</p>
         <a href="#" class="button">Contact Now</a>
+    </div>
+</section>
+
+<section id="blog">
+    <div class="container">
+        <h2>Our Latest Posts</h2>
+        <p>Catch up on the latest insights from the CTV world.</p>
+        <a href="#blog" class="button">Take Me There</a>
     </div>
 </section>
 
