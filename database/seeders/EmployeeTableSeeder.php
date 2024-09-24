@@ -6,6 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Employee;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
 
 class EmployeeTableSeeder extends Seeder
 {
@@ -14,6 +15,9 @@ class EmployeeTableSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+
     }
-}
+//
+    }
+//}
+
